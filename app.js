@@ -10,9 +10,8 @@ let utcTime = `${hours.toString().padStart(2, "0")}:${minutes
 
 let getDate = document.querySelector(".date");
 getDate.innerHTML = utcTime;
-
-let day = currentDate.toDateString().slice(0, 3);
-
+let options = { weekday: "long" };
+let day = currentDate.toLocaleDateString("en-US", options);
 let getDay = document.querySelector(".day");
 getDay.innerHTML = day;
 
