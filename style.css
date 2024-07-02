@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: auto;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 40px;
+  background-color: white;
+  box-shadow: 3px 0px 10px 1px gray;
+}
+
+nav h1 {
+  font-size: 26px;
+}
+
+nav .time {
+  display: flex;
+  gap: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: #b49d79;
+}
+
+nav ul li a.active-link {
+  color: #b49d79;
+}
+
+.sect-main {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 1000px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.img-div {
+  position: relative;
+  width: 370px;
+  height: 370px;
+  border: 20px solid #b49d79;
+}
+
+.img-div img {
+  position: relative;
+  top: -70px;
+  right: -40px;
+}
+
+.goals {
+  width: 1000px;
+  text-align: justify;
+}
+
+.links {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.sect-portfolio {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.portfolio-div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.port-1 {
+  background: url(./images/portfolio-1.jpg);
+  width: 300px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.port-2 {
+  background: url(./images/portfolio-2.jpg);
+  width: 300px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.port-3 {
+  background: url(./images/portfolio-3.jpg);
+  width: 300px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.port-4 {
+  background: url(./images/portfolio-4.jpg);
+  width: 300px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.port-5 {
+  background: url(./images/portfolio-5.jpg);
+  width: 300px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.port-6 {
+  background: url(./images/portfolio-6.jpg);
+  width: 300px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.port-item {
+  width: 100%;
+  height: 160px;
+  background-color: rgba(12, 11, 10, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-list h2 {
+  font-size: 18px;
+}
+
+.item-list p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.listed-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.listed-item a {
+  filter: invert(1);
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .time {
+    display: none;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .bum1,
+  .bum2,
+  .bum3 {
+    height: 3px;
+    width: 30px;
+    background: black;
+    margin: 4px;
+  }
+
+  .ham1 {
+    position: relative;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transform: rotate(45deg);
+  }
+
+  .ham2 {
+    position: relative;
+    top: -10px;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transform: rotate(-45deg);
+  }
+
+  .ham3 {
+    display: none;
+  }
+}

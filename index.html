@@ -1,0 +1,204 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <h1 data-testid="slackDisplayName">Fredrick Aniebonam</h1>
+
+      <div class="time">
+        <p class="date" data-testid="currentTimeUTC"></p>
+        <p class="day" data-testid="currentDay"></p>
+      </div>
+
+      <ul>
+        <li>
+          <a class="tab" onclick="handleActiveLink(event)" href="#">Home</a>
+        </li>
+        <li>
+          <a class="tab" onclick="handleActiveLink(event)" href="#">About</a>
+        </li>
+        <li>
+          <a class="tab" onclick="handleActiveLink(event)" href="#"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a class="tab" onclick="handleActiveLink(event)" href="#">Contact</a>
+        </li>
+      </ul>
+
+      <div class="menu">
+        <span class="bum1"></span>
+        <span class="bum2"></span>
+        <span class="bum3"></span>
+      </div>
+    </nav>
+    <div class="container">
+      <section class="sect-main">
+        <div class="main">
+          <div class="img-div">
+            <img
+              data-testid="slackProfilePicture"
+              src="./images/fred.JPG"
+              alt="My Picture"
+            />
+          </div>
+          <div>
+            <h1>I'm Fredrick Aniebonam a Frontend Web Developer</h1>
+            <p>
+              I'm passionate about crafting innovative frontend solutions and
+              designing intuitive user interfaces that bring creative ideas to
+              life. My mission is to transform concepts into engaging digital
+              experiences.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="goals">
+        <p>
+          Over the next two years, my primary goal is to become a well-rounded
+          frontend developer with expertise in both frontend and backend
+          technologies. I aim to deepen my knowledge of JavaScript, master
+          advanced concepts in React, and integrate TypeScript into my projects
+          for improved code quality. Additionally, I plan to gain proficiency in
+          backend development with Node.js, focusing on building robust RESTful
+          APIs and working with databases like MongoDB and PostgreSQL. Lastly, I
+          plan to explore emerging technologies like artificial intelligence,
+          machine learning, and blockchain, and pursue relevant certifications
+          to validate my skills and knowledge.
+        </p>
+      </section>
+
+      <section class="sect-portfolio">
+        <h1>My Portfolio</h1>
+
+        <div class="portfolio-div">
+          <div class="port-1">
+            <div class="port-item">
+              <div class="item-list">
+                <h2>Reflex</h2>
+                <p>An emergency service app</p>
+              </div>
+              <div class="listed-item">
+                <a href="https://github.com/fredluggard/reflex">
+                  <img src="./images/plus.png" alt="Github"
+                /></a>
+                <a href="https://reflex-zeta.vercel.app"
+                  ><img src="./images/chain.png" alt="Visit site"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="port-2">
+            <div class="port-item">
+              <div class="item-list">
+                <h2>HealthKeep</h2>
+                <p>A health app for managing patient's medical record</p>
+              </div>
+              <div class="listed-item">
+                <a href="https://github.com/fredluggard/HealthKeep">
+                  <img src="./images/plus.png" alt="Github"
+                /></a>
+                <a
+                  href="https://elastic-bath-tacky-doctor-production.pipeops.app/"
+                  ><img src="./images/chain.png" alt="Visit site"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="port-3">
+            <div class="port-item">
+              <div class="item-list">
+                <h2>Bandage</h2>
+                <p>An e-commerce store</p>
+              </div>
+              <div class="listed-item">
+                <a href="https://github.com/fredluggard/Bandage-E-commerce">
+                  <img src="./images/plus.png" alt="Github"
+                /></a>
+                <a href="https://bandage-pi-puce.vercel.app/"
+                  ><img src="./images/chain.png" alt="Visit site"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="port-4">
+            <div class="port-item">
+              <div class="item-list">
+                <h2>BuyNow</h2>
+                <p>A website for buying furniture</p>
+              </div>
+              <div class="listed-item">
+                <a href="https://github.com/fredluggard/buyNow">
+                  <img src="./images/plus.png" alt="Github"
+                /></a>
+                <a href="https://buy-now-nine.vercel.app/"
+                  ><img src="./images/chain.png" alt="Visit site"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="port-5">
+            <div class="port-item">
+              <div class="item-list">
+                <h2>Intern's Scoreboard</h2>
+                <p>A scoreboard for displaying learnable intern's score</p>
+              </div>
+              <div class="listed-item">
+                <a href="https://github.com/fredluggard/intern-scoreboard">
+                  <img src="./images/plus.png" alt="Github"
+                /></a>
+                <a href="https://intern-scoreboard.vercel.app/"
+                  ><img src="./images/chain.png" alt="Visit site"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="port-6">
+            <div class="port-item">
+              <div class="item-list">
+                <h2>Netflix</h2>
+                <p>A netflix clone</p>
+              </div>
+              <div class="listed-item">
+                <a href="https://github.com/fredluggard/Netflix-Clone">
+                  <img src="./images/plus.png" alt="Github"
+                /></a>
+                <a href="https://netflix-clone-silk-chi.vercel.app/"
+                  ><img src="./images/chain.png" alt="Visit site"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="links">
+        <p data-testid="slackEmail">fredrick.ebuka33@gmail.com</p>
+        <a data-testid="hngLink" href="hng.tech/learn">Hng Internship</a>
+        <a data-testid="keywordLink" href="keyword.dog">Keyword.dog</a>
+        <a data-testid="scrapeanywebLink" href="scrapeanyweb.site"
+          >scrapeanyweb</a
+        >
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
