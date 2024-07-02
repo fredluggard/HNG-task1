@@ -25,15 +25,19 @@
           <a class="tab" onclick="handleActiveLink(event)" href="#">Home</a>
         </li>
         <li>
-          <a class="tab" onclick="handleActiveLink(event)" href="#">About</a>
+          <a class="tab" onclick="handleActiveLink(event)" href="#about"
+            >About</a
+          >
         </li>
         <li>
-          <a class="tab" onclick="handleActiveLink(event)" href="#"
+          <a class="tab" onclick="handleActiveLink(event)" href="#portfolio"
             >Portfolio</a
           >
         </li>
         <li>
-          <a class="tab" onclick="handleActiveLink(event)" href="#">Contact</a>
+          <a class="tab" onclick="handleActiveLink(event)" href="#links"
+            >Contact</a
+          >
         </li>
       </ul>
 
@@ -43,8 +47,26 @@
         <span class="bum3"></span>
       </div>
     </nav>
+
+    <section class="overlay">
+      <ul class="overlay-links">
+        <li>
+          <a class="tab" href="#">Home</a>
+        </li>
+        <li>
+          <a class="tab" href="#about">About</a>
+        </li>
+        <li>
+          <a class="tab" href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a class="tab" href="#links">Contact</a>
+        </li>
+      </ul>
+    </section>
+
     <div class="container">
-      <section class="sect-main">
+      <section class="sect-main" id="about">
         <div class="main">
           <div class="img-div">
             <img
@@ -55,7 +77,7 @@
           </div>
           <div>
             <h1>I'm Fredrick Aniebonam a Frontend Web Developer</h1>
-            <p>
+            <p style="padding: 10px">
               I'm passionate about crafting innovative frontend solutions and
               designing intuitive user interfaces that bring creative ideas to
               life. My mission is to transform concepts into engaging digital
@@ -80,7 +102,7 @@
         </p>
       </section>
 
-      <section class="sect-portfolio">
+      <section class="sect-portfolio" id="portfolio">
         <h1>My Portfolio</h1>
 
         <div class="portfolio-div">
@@ -189,7 +211,7 @@
         </div>
       </section>
 
-      <section class="links">
+      <section class="links" id="links">
         <p data-testid="slackEmail">fredrick.ebuka33@gmail.com</p>
         <a data-testid="hngLink" href="hng.tech/learn">Hng Internship</a>
         <a data-testid="keywordLink" href="keyword.dog">Keyword.dog</a>
